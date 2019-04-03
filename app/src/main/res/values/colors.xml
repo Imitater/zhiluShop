@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="black">#000000</color>
+    <color name="main_gray">#989898</color>
+    <color name="white">#ffffff</color>
+    <color name="shape_tran">#d8f8f8f8</color>
+    <color name="home_yellow">#FFB505</color>
+    <color name="home_gray">#C4C2C2</color>
+    <color name="line_gray">#F0F0F0</color>
+    <color name="adpater_category_gray">#C6C6C6</color>
+    <color name="adpater_category_yellow">#FFCF5E</color>
+    <color name="primary_color">#FFCF5E</color>
+    <color name="secondary_color">#d8ffcf5e</color>
+    <color name="adapter_man_pink">#FF9F9F</color>
+    <color name="car_black">#323643</color>
+    <color name="car_is_empty_line_gray">#EFEFEF</color>
+    <color name="car_have_line_gray">#F7F7F7</color>
+    <color name="car_item_gray">#8A8A8A</color>
+    <color name="red">#F40017</color>
+    <color name="address_edit_hint_gray">#AAAAAA</color>
+    <color name="address_edit_line_gray">#E5E5E5</color>
+    <color name="adapter_order_gray">#848790</color>
+    <color name="adapter_order_yellow">#FFD11E</color>
+    <color name="good_gray">#6D6D6D</color>
+    <color name="good_back_money_black">#323643</color>
+    <color name="blue">#1757F9</color>
+    <color name="sort_gray">#9A9A9A</color>
+    <color name="order_info_yellow">#FFD11E</color>
+    <color name="apply_for_info_gray">#7B7B7B</color>
+    <color name="logistics_gray">#C2C2C2</color>
+</resources>

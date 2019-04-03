@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="10dp"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/adapter_good_iv"
+            android:layout_width="37dp"
+            android:layout_height="37dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="23dp"
+            android:elevation="9dp"
+            app:civ_border_color="@color/white"
+            app:civ_border_width="2dp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:text="何＊＊"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <com.mouqukeji.zhailushop.ui.widget.StarBar
+            android:id="@+id/starBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            app:space_width="5dp"
+            app:star_height="10dp"
+            app:star_hollow="@drawable/star_empty"
+            app:star_isIndicator="true"
+            app:star_max="5"
+            app:star_orientation="horizontal"
+            app:star_rating="5"
+            app:star_solid="@drawable/star_full"
+            app:star_width="10dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="20dp"
+            android:text="中评"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <TextView
+        android:singleLine="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="23dp"
+        android:text="很好看的衣服，穿上气场两米八0..."
+        android:textColor="@color/black"
+        android:textSize="12sp" />
+
+</LinearLayout>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#F5F5F5"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+<include layout="@layout/actionbar"/>
+    <LinearLayout
+        android:background="@color/colorWhite"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="17dp"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:text="收货人"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/address_edit_name"
+            android:layout_marginLeft="37dp"
+            android:textSize="15sp"
+            android:textColorHint="@color/address_edit_hint_gray"
+            android:hint="姓名"
+            android:background="@android:color/transparent"
+            android:singleLine="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <View
+        android:background="@color/address_edit_line_gray"
+        android:layout_width="match_parent"
+        android:layout_height="0.25dp" />
+    <LinearLayout
+        android:background="@color/colorWhite"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="17dp"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:text="手机号码"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/address_edit_number"
+            android:layout_marginLeft="22dp"
+            android:textSize="15sp"
+            android:textColorHint="@color/address_edit_hint_gray"
+            android:hint="电话"
+            android:background="@android:color/transparent"
+            android:singleLine="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <View
+        android:background="@color/address_edit_line_gray"
+        android:layout_width="match_parent"
+        android:layout_height="0.25dp" />
+    <LinearLayout
+        android:background="@color/colorWhite"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="17dp"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:text="所在地区"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:gravity="center_vertical"
+            android:id="@+id/address_edit_location"
+            android:layout_marginLeft="22dp"
+            android:textSize="15sp"
+            android:textColor="@color/address_edit_hint_gray"
+             android:hint="地区信息请选择"
+            android:singleLine="true"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:layout_marginRight="15dp"
+            android:layout_gravity="center_vertical"
+            android:background="@mipmap/mipmap_gray_next"
+            android:layout_width="17dp"
+            android:layout_height="17dp" />
+    </LinearLayout>
+    <View
+        android:background="@color/address_edit_line_gray"
+        android:layout_width="match_parent"
+        android:layout_height="0.25dp" />
+    <LinearLayout
+        android:background="@color/colorWhite"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="17dp"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:text="详细地址"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:gravity="center_vertical"
+            android:id="@+id/address_edit_location_info"
+            android:layout_marginLeft="22dp"
+            android:textSize="15sp"
+            android:textColorHint="@color/address_edit_hint_gray"
+            android:hint="详细街道地址"
+            android:background="@android:color/transparent"
+            android:singleLine="true"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <View
+        android:background="@color/address_edit_line_gray"
+        android:layout_width="match_parent"
+        android:layout_height="0.25dp" />
+    <Button
+        android:id="@+id/address_edit_bt"
+        android:textColor="@color/home_yellow"
+        android:text="确认"
+        android:layout_marginTop="23dp"
+        android:layout_marginRight="58dp"
+        android:layout_marginLeft="58dp"
+        android:background="@drawable/address_add_bt_shape"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+    </LinearLayout>
+    <FrameLayout
+        android:visibility="gone"
+        android:id="@+id/address_edit_framlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></FrameLayout>
+</RelativeLayout>

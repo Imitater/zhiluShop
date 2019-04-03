@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mouqukeji.zhailushop">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!--用于申请获取蓝牙信息进行室内定位-->
+    <uses-permission android:name="android.permission.BLUETOOTH"></uses-permission>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"></uses-permission>
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ui.activity.MainActivity"
+             android:windowSoftInputMode="adjustPan" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.activity.PackageActivity"></activity>
+        <activity android:name=".ui.activity.FocusActivity"/>
+        <activity android:name=".ui.activity.CollectionActivity"/>
+        <activity android:name=".ui.activity.AddressActivity"/>
+        <activity android:name=".ui.activity.SelectCityActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".ui.activity.HelpActivity"/>
+        <activity android:name=".ui.activity.AdviceActivity"/>
+        <activity android:name=".ui.activity.MyInfoActivity" />
+        <activity android:name=".ui.activity.OrderActivity"/>
+        <activity android:name=".ui.activity.GoodInfoActivity"/>
+        <activity android:name=".ui.activity.StoreActivity"/>
+        <activity android:name=".ui.activity.OrderInfoActivity"/>
+        <activity android:name=".ui.activity.BigImageActivity"/>
+         <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="5b775c0ea1de07d91707579de27609f9">//开发者申请的key
+        </meta-data>
+        <service android:name="com.amap.api.location.APSService" />
+        <meta-data
+            android:name="design_width_in_dp"
+            android:value="360" />
+        <meta-data
+            android:name="design_height_in_dp"
+            android:value="640" />
+    </application>
+
+</manifest>

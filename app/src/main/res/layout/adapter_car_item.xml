@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_marginTop="13dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.mouqukeji.zhailushop.ui.widget.SmoothCheckBox
+            android:id="@+id/car_item_checkbox"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            app:color_checked="@color/home_yellow"
+            app:color_tick="@color/black"
+            app:color_unchecked="@color/white"
+            app:duration="2" />
+        <ImageView
+            android:scaleType="fitXY"
+            android:layout_marginBottom="17dp"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/car_item_iv"
+            android:layout_width="85dp"
+            android:layout_height="85dp" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/car_item_right_bottom"
+                android:layout_marginLeft="12dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/car_item_cut"
+                    android:text="—"
+                    android:background="@drawable/car_item_background_shape"
+                    android:gravity="center"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp" />
+                <EditText
+                    android:id="@+id/car_item_et"
+                    android:text="1"
+                    android:paddingRight="35dp"
+                    android:paddingLeft="35dp"
+                    android:background="@drawable/car_item_background_shape"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp" />
+                <TextView
+                    android:id="@+id/car_item_add"
+                    android:text="+"
+                    android:background="@drawable/car_item_background_shape"
+                    android:gravity="center"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/car_item_bottom_type"
+                     android:background="#F3F3F3"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/car_item_bottom_tv"
+                        android:paddingBottom="11dp"
+                        android:paddingTop="11dp"
+                        android:paddingLeft="11dp"
+                        android:textColor="#444444"
+                        android:textSize="12sp"
+                        android:text="颜色:黑色  尺码:XL"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <ImageView
+                        android:background="@mipmap/mipmap_down"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="15dp"
+                        android:layout_height="8dp" />
+                </LinearLayout>
+            </LinearLayout>
+        <LinearLayout
+            android:id="@+id/car_item_right_top"
+            android:layout_marginLeft="12dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/car_item_title"
+                    android:textColor="@color/black"
+                    android:text="时尚潮流女士衬衫"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/car_item_count"
+                    android:textColor="@color/car_item_gray"
+                    android:layout_marginRight="17dp"
+                    android:text="X1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/car_item_type"
+                android:textColor="#7C7C7C"
+                android:layout_marginTop="12dp"
+                android:textSize="10sp"
+                android:text="颜色：黑色  尺码：XL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/car_item_price"
+                android:layout_marginTop="10dp"
+                android:textSize="18sp"
+                android:textColor="@color/red"
+                android:text="¥200"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

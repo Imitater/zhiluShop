@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/my_sort_defaul"
+        android:textColor="@color/black"
+        android:text="默认"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content" />
+    <View
+        android:layout_gravity="center_vertical"
+        android:background="@color/line_gray"
+        android:layout_width="1dp"
+        android:layout_height="16dp"/>
+    <TextView
+        android:id="@+id/my_sort_new"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:gravity="center"
+        android:textColor="@color/sort_gray"
+        android:text="新品"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content" />
+    <View
+        android:layout_gravity="center_vertical"
+        android:background="@color/line_gray"
+        android:layout_width="1dp"
+        android:layout_height="16dp"/>
+    <LinearLayout
+        android:id="@+id/my_sort_price"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/my_sort_price_tv"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:gravity="right"
+        android:textColor="@color/sort_gray"
+        android:text="价格"
+        android:layout_weight="1"
+         android:layout_width="0dp"
+        android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="15dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/my_sort_price_top"
+                android:background="@mipmap/mipmap_gray_sort_up"
+                android:layout_width="12dp"
+                android:layout_height="10dp" />
+            <ImageView
+                android:id="@+id/my_sort_price_bottom"
+                android:background="@mipmap/mipmap_gray_sort_down"
+                android:layout_width="11dp"
+                android:layout_height="10dp" />
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_gravity="center_vertical"
+        android:background="@color/line_gray"
+        android:layout_width="1dp"
+        android:layout_height="16dp"/>
+    <LinearLayout
+        android:id="@+id/my_sort_discount"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/my_sort_discount_tv"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:gravity="right"
+        android:textColor="@color/sort_gray"
+        android:text="折扣"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="15dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/my_sort_discount_top"
+            android:background="@mipmap/mipmap_gray_sort_up"
+            android:layout_width="12dp"
+            android:layout_height="10dp" />
+        <ImageView
+            android:id="@+id/my_sort_discount_bottom"
+            android:background="@mipmap/mipmap_gray_sort_down"
+            android:layout_width="11dp"
+            android:layout_height="10dp" />
+    </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_gravity="center_vertical"
+        android:background="@color/line_gray"
+        android:layout_width="1dp"
+        android:layout_height="16dp"/>
+    <TextView
+        android:id="@+id/my_sort_select"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:gravity="center"
+        android:textColor="@color/sort_gray"
+        android:text="筛选"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content" />
+</LinearLayout>

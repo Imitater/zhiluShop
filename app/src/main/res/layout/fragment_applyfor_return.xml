@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <include layout="@layout/actionbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/apply_for_iv"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="16dp"
+            android:scaleType="fitXY" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="9dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="时尚潮流女士衬衫"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_marginRight="22dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="¥200"
+                    android:textColor="@color/red"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:text="颜色：黑色 尺码：XL"
+                android:textColor="#7C7C7C"
+                android:textSize="10sp" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/apply_for_select"
+        android:layout_marginTop="26dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:textSize="16sp"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/black"
+            android:text="退款原因"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/apply_for_cause_tv"
+            android:textSize="14sp"
+            android:text="请选择"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_marginRight="16dp"
+            android:background="@mipmap/mipmap_gray_next"
+            android:layout_width="25dp"
+            android:layout_height="25dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="25dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:textSize="16sp"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/black"
+            android:text="退款金额"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_marginRight="16dp"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_gravity="right"
+                android:textColor="@color/red"
+                android:textSize="18sp"
+                android:text="¥200"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginTop="8dp"
+                android:textSize="12sp"
+                android:text="(运费不退)"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="34dp"
+
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.mouqukeji.zhailushop.ui.widget.SmoothCheckBox
+            android:layout_gravity="center"
+            android:id="@+id/car_have_checkbox"
+            android:layout_marginLeft="20dp"
+            android:layout_width="20dp"
+            app:duration="2"
+            app:color_tick="@color/black"
+            app:color_checked="@color/home_yellow"
+            app:color_unchecked="@color/white"
+            android:layout_height="20dp" />
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:textColor="#737373"
+            android:layout_marginLeft="8dp"
+            android:text="退回商品保证完好,商品需要买家承担退货邮费;"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>
+    <FrameLayout
+        android:layout_alignParentBottom="true"
+        android:elevation="1dp"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/apply_for_bt"
+            android:layout_marginRight="58dp"
+            android:layout_marginLeft="58dp"
+            android:textSize="17sp"
+            android:text="提交"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/order_info_yellow_solide_shape"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+    </FrameLayout>
+    <FrameLayout
+        android:elevation="2dp"
+        android:id="@+id/apply_for_framelayout"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></FrameLayout>
+</RelativeLayout>
